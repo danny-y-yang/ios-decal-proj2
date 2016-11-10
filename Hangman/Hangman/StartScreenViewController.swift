@@ -10,9 +10,10 @@ import UIKit
 
 class StartScreenViewController: UIViewController {
 
+    @IBOutlet weak var introImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        introImage.image = #imageLiteral(resourceName: "launchPepe")
         // Do any additional setup after loading the view.
     }
 
@@ -21,7 +22,7 @@ class StartScreenViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func goBackToLaunchScreen(segue: UIStoryboardSegue) {}
     /*
     // MARK: - Navigation
 
