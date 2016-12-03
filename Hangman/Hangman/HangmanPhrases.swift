@@ -15,6 +15,7 @@ class HangmanPhrases {
     init() {
         let path = Bundle.main.path(forResource: "phrases", ofType: "plist")
         phrases = NSArray.init(contentsOfFile: path!)
+        
     }
     
     // Get random phrase from all available phrases
